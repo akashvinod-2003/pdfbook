@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/react-CHdo91hT.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDFBookTurn - Premium Cozy FlipBook Reader</title>
+    <meta name="description" content="A state-of-the-art interactive React application to view custom PDF books with photorealistic 3D page turning physics, ambient warm lights, and custom sound synthesis." />
+    
+    <!-- Load CDN libraries to guarantee flawless, compile-free bundler execution in Vite -->
+    <!-- pdf-lib for any page calculations -->
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <!-- pdf.js dist for high performance page extraction and thumbnail previews -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+    </script>
+    <!-- page-flip by Nodonisko for canvas warping 3D realistic curves and physics -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script type="module" crossorigin src="/assets/index-Dzt9Kjkd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DyukSqPZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
